@@ -153,24 +153,31 @@
 
 </ul>
 
-<!-- Audio opzionale (nascosto e discreto) -->
-<audio id="bg-audio" preload="none">
-  <source src="find-myself_finn.mp3" type="audio/mpeg">
-</audio>
 
-<button onclick="toggleAudio()" style="
-  font-size: 0.75em;
-  opacity: 0.5;
-  border: none;
-  background: none;
-  cursor: pointer;
-">
-  audio
-</button>
+
+<div style="text-align: right;">
+
+  <audio id="bg-audio" preload="none">
+    <source src="find-myself_finn.mp3" type="audio/mpeg">
+  </audio>
+
+  <button onclick="toggleAudio()" style="
+    font-size: 0.9em;
+    color: #555555;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+  ">
+    &#9835;
+  </button>
+
+</div>
 
 <script>
   const audio = document.getElementById("bg-audio");
-  audio.volume = 0.2; // volume ridotto (20%)
+  audio.volume = 0.1;
 
   function toggleAudio() {
     if (audio.paused) {
