@@ -6,7 +6,7 @@
 
   <style>
     body {
-      color: #333333;
+      color: #2b2b2b;
       font-family: serif;
     }
 
@@ -180,13 +180,13 @@
   </audio>
 
   <button onclick="toggleAudio()" style="
-    font-size: 0.9em;
-    color: #555555;
+    font-size: 1.25em;
+    color: #2b2b2b;
     border: none;
     background: none;
     cursor: pointer;
     padding: 0;
-    text-decoration: underline;
+    text-decoration: none;
   ">
     &#9835;
   </button>
@@ -195,7 +195,7 @@
 
 <script>
   const audio = document.getElementById("bg-audio");
-  audio.volume = 0.1;
+  audio.volume = 0.25;
 
   function toggleAudio() {
     if (audio.paused) {
