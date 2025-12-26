@@ -18,9 +18,15 @@
 
   li {margin-bottom: 0.01em;}
 
-  a {color: #3a4f7a; text-decoration: none;}
+  a {
+  color: #3a4f7a;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.15em;
+  transition: text-decoration-color 0.15s ease;
+  }
 
-  a:hover {text-decoration: underline;}
+  a:hover {text-decoration-color: currentColor;}
 
   ul {padding-left: 1.75em; margin: 0.9em 0 0 0;}
 
@@ -57,7 +63,7 @@ Varese, Italy </span>
 
 </p>
 
-<p> <span style="font-weight: 600; opacity: 0.95; letter-spacing: 0.025em;">@</span>
+<p> <span style="font-weight: 600; opacity: 0.95; letter-spacing: 0.025em;"> @ </span>
 <a href="mailto:marco.tarsia@uninsubria.it" style="color:#1f5a5f;">
 marco.tarsia@uninsubria.it </a>
 </p>
