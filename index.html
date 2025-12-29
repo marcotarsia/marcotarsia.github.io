@@ -29,54 +29,27 @@
 
   a:hover {text-decoration-color: currentColor;}
 
-  ol {
+/* Spaziatura generale elenchi */
+ol, ul{
   margin: 0.9em 0 0 0;
+  padding-left: 1.15em;         /* rientro globale (regolalo) */
 }
 
-/* ---------- OL numerato ---------- */
-ol.publications {
-  list-style: none;
-  counter-reset: pub;
-  padding-left: 0;
-  margin: 0.9em 0 0 0;
+/* Spazio tra marker e testo (funziona bene su iOS Safari) */
+ol li, ul li{
+  padding-left: 0.15em;         /* marker → testo (regolalo) */
 }
 
-ol.publications > li {
-  counter-increment: pub;
-  display: flex;
-  align-items: flex-start;   /* 🔑 FIX iPhone */
-  gap: 0.45em;
+/* Variante: pubblicazioni numerate */
+ol.publications{
+  list-style: decimal;
 }
 
-ol.publications > li::before {
-  content: counter(pub) ".";
-  width: 1.25em;
-  text-align: right;
-  font-weight: 600;
-  color: #222;
-  flex-shrink: 0;
+/* (Opzionale) bullet più “sobri” */
+ul{
+  list-style: disc;
 }
 
-/* ---------- UL con bullet ---------- */
-ul {
-  list-style: none;
-  padding-left: 0.375em;
-  margin: 0.9em 0 0 0;
-}
-
-ul > li {
-  display: flex;
-  align-items: flex-start;   /* 🔑 FIX iPhone */
-  gap: 0.35em;
-}
-
-ul > li::before {
-  content: "•";
-  width: 0.75em;
-  text-align: center;
-  color: #222;
-  flex-shrink: 0;
-}
 
   strong {font-weight: 700; color: #3a3a3a;}
 
