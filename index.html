@@ -30,19 +30,19 @@
   a:hover {text-decoration-color: currentColor;}
 
   ol {margin: 0.9em 0 0 0;}
-    
+
   ol.publications{list-style: none; counter-reset: pub; padding-left: 0; margin: 0.9em 0 0 0;}
-    
-  ol.publications > li{counter-increment: pub; position: relative; padding-left: 1.75em;}
-    
-  ol.publications > li::before {content: counter(pub) "."; position: absolute; left: 0; width: 1.25em; text-align: right; font-weight: 600; color: #222;}
-    
+
+  ol.publications > li{counter-increment: pub; position: relative; padding-left: 1.75em; line-height: 1.35}
+
+  ol.publications > li::before {content: counter(pub) "."; position: absolute; left: 0; width: 1.25em; text-align: right; font-weight: 600; color: #222; line-height: inherit; transform: translateY(0.08em);}
+
   ul{list-style: none; padding-left: 0.375em; margin: 0.9em 0 0 0;}
-    
-  ul > li{position: relative; padding-left: 1.05em;}
-    
-  ul > li::before {content: "•"; position: absolute; left: 0; width: 0.75em; text-align: center; color: #222;}
-  
+
+  ul > li{position: relative; padding-left: 1.05em; line-height: 1.35;}
+
+  ul > li::before {content: "•"; position: absolute; left: 0; width: 0.75em; text-align: center; color: #222; line-height: inherit; transform: translateY(0.08em);}
+
   strong {font-weight: 700; color: #3a3a3a;}
 
   </style>
