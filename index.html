@@ -31,22 +31,22 @@
 
   a:hover {text-decoration-color: currentColor;}
 
-ol { margin: 0.9em 0 0 0; }
+  ol { margin: 0.9em 0 0 0; }
 
-ol.publications{
+  ol.publications{
   list-style: none;
   counter-reset: pub;
   padding-left: 0;
   margin: 0.9em 0 0 0;
-}
+  }
 
-ol.publications > li{
+  ol.publications > li{
   counter-increment: pub;
   position: relative;
   padding-left: 1.75em;
-}
+  }
 
-ol.publications > li::before{
+  ol.publications > li::before{
   content: counter(pub) ".";
   position: absolute;
   left: 0;
@@ -54,29 +54,29 @@ ol.publications > li::before{
   text-align: right;
   font-weight: 600;
   color: #222;
-}
+  }
 
-ul{
+  ul{
   list-style: none;
   padding-left: 0.375em;
   margin: 0.9em 0 0 0;
-}
+  }
 
-ul > li{
+  ul > li{
   position: relative;
   padding-left: 1.05em;
-}
+  }
 
-ul > li::before{
+  ul > li::before{
   content: "•";
   position: absolute;
   left: 0;
   width: 0.75em;
   text-align: center;
   color: #222;
-}
+  }
 
-  strong {font-weight: 700; color: #3a3a3a;}
+  strong{font-weight: 600;color: #444;}
 
   </style>
 
