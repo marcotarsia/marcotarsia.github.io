@@ -8,6 +8,8 @@
 
   <meta charset="utf-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title> Marco Tarsia </title>
 
   <link rel="icon" href="favicon.ico">
@@ -29,80 +31,48 @@
 
   a:hover {text-decoration-color: currentColor;}
 
-ol { margin: 0.9em 0 0 0; }
+@media (max-width: 800px){
 
-ol.publications{
-  list-style: none;
-  counter-reset: pub;
-  padding-left: 0;
-  margin: 0.9em 0 0 0;
-}
+  ul{
+    list-style: disc !important;
+    list-style-position: inside !important;
+    padding-left: 0 !important;
+    margin: 0.9em 0 0 0 !important;
+  }
 
-ol.publications > li{
-  counter-increment: pub;
-  position: relative;
-  padding-left: 1.75em;
-}
+  ul > li{
+    position: static !important;
+    padding-left: 0 !important;
+  }
 
-ol.publications > li::before{
-  content: counter(pub) ".";
-  position: absolute;
-  left: 0;
-  width: 1.25em;
-  text-align: right;
-  font-weight: 600;
-  color: #222;
-}
-
-ul{
-  list-style: none;
-  padding-left: 0.375em;
-  margin: 0.9em 0 0 0;
-}
-
-ul > li{
-  position: relative;
-  padding-left: 1.05em;
-}
-
-ul > li::before{
-  content: "•";
-  position: absolute;
-  left: 0;
-  width: 0.75em;
-  text-align: center;
-  color: #222;
-}
-
-@media (max-width: 600px){
-
-  ul,
-  ol.publications{
-    list-style-position: inside;
-    list-style: disc;
-    padding-left: 0;
+  ul > li::before{
+    content: none !important;
   }
 
   ol.publications{
-    list-style: decimal;
+    list-style: decimal !important;
+    list-style-position: inside !important;
+    padding-left: 0 !important;
+    margin: 0.9em 0 0 0 !important;
+    counter-reset: none !important;
   }
 
-  ul > li,
   ol.publications > li{
-    position: static;
-    padding-left: 0;
+    position: static !important;
+    padding-left: 0 !important;
+    counter-increment: none !important;
   }
 
-  ul > li::before,
   ol.publications > li::before{
-    content: none;
+    content: none !important;
   }
 
   ol.publications::marker{
-    font-weight: 600;
-    color: #222;
+    font-weight: 600 !important;
+    color: #222 !important;
   }
 }
+
 
 
 
